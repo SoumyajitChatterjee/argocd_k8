@@ -7,11 +7,12 @@ spec:
   project: default
 
   source: 
-    repoUrl: https://github.com/SoumyajitChatterjee/argocd_k8.git
+    repoURL: https://github.com/SoumyajitChatterjee/argocd_k8.git
     targetRevision: Head 
   destination: 
     server: https://kubernetes.default.svc
     namespace: myapp
+    path: dev
 
   syncPolicy: 
     syncOptions: 
